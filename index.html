@@ -24,7 +24,7 @@ a{color:#b07d00}
 <p>Yegor pushed back on 12 Nov, and he is right. What was built is a CRM: every rep, every inbox, every chat, one timeline per customer. That is more personal data than marketing needs, and it still does not answer the question he expected: <strong>which content brings customers who buy.</strong></p>
 <p>The new aim, in Henry's and Yegor's words:</p>
 <ul>
-<li><strong>Content → sale:</strong> when someone comes from a YouTube Short, a long video or Instagram and buys, we see it.</li>
+<li><strong>Social media → sales:</strong> when someone comes from a YouTube Short, a long video, Instagram, a comment or a DM and contacts us or buys, we see it. This is our biggest blind spot today.</li>
 <li><strong>What customers talk about:</strong> questions before buying, pain points, issues, products, what makes people hesitate, as summaries for marketing.</li>
 <li><strong>Both ways:</strong> sales sees which content actually sells, so they can send it.</li>
 </ul>
@@ -41,9 +41,9 @@ a{color:#b07d00}
 </thead>
 <tbody>
 <tr>
-<td><strong>Content → sales</strong></td>
-<td>Which platform and which video brings inquiries and buyers</td>
-<td>"Z15 Pro bench Short: 6 inquiries, 2 orders"</td>
+<td><strong>Social → sales</strong></td>
+<td>For each platform, post, comment reply and DM reply: views → link clicks → conversations started (form, WhatsApp, email) → ClickUp inquiries and tickets → orders</td>
+<td>"Z15 Pro bench Short: 41k views → 180 clicks → 9 WhatsApp chats + 3 forms → 6 inquiries → 2 orders"</td>
 </tr>
 <tr>
 <td><strong>Before they buy</strong></td>
@@ -75,34 +75,46 @@ a{color:#b07d00}
 </thead>
 <tbody>
 <tr>
+<td><strong>Tracked links: every link we publish anywhere</strong> (bios, descriptions, pinned comments, Story stickers, comment replies, DM replies, email signatures, website buttons)</td>
+<td>Each click: which link code, so which platform, which post, which reply</td>
+<td>Click counts per code</td>
+<td><span class="op">⏳ new, the core of social → sales</span></td>
+</tr>
+<tr>
+<td><strong>Website inquiry form</strong></td>
+<td>The link code the visitor arrived with (kept for 30 days), plus "Where did you find us?"</td>
+<td>The code and the answer, on the ClickUp task</td>
+<td><span class="op">⏳ needs a small change to the form</span></td>
+</tr>
+<tr>
+<td><strong>Support WhatsApp</strong> (Josh's 143 number), through Chatwoot</td>
+<td>The link code in the customer's first message; questions and issues</td>
+<td>The code; topics only</td>
+<td><span class="op">⏳ phase 3</span></td>
+</tr>
+<tr>
+<td><strong>Emails of Petr, Slávek and Patrik only</strong></td>
+<td>The link code in the subject; pre-purchase questions</td>
+<td>The code; questions only, email text not stored</td>
+<td><span class="op">⏳ needs their real SiteGround passwords</span></td>
+</tr>
+<tr>
 <td>ClickUp <strong>Sales Inquiries</strong> (the website form)</td>
-<td>Inquiry type, region, product interest, the customer's question, and <strong>where they found us</strong> (new form question)</td>
+<td>Inquiry type, region, product interest, the customer's question, the link code</td>
 <td>Topics and counts; the task stays in ClickUp</td>
 <td><span class="hl">✅ syncing since 12 Nov</span></td>
 </tr>
 <tr>
-<td>ClickUp <strong>Orders</strong></td>
-<td>That an inquiry became a sale</td>
-<td>The match only; <strong>no amounts</strong></td>
-<td><span class="op">⏳ to confirm with Yegor</span></td>
-</tr>
-<tr>
 <td>ClickUp <strong>Support Requests</strong>, Technical, Returns &amp; Warranty, Shipping resolution, Shipping &amp; Termination</td>
-<td>Issue topics</td>
+<td>Issue topics, and the link code where the chat or form had one</td>
 <td>Topics and counts</td>
 <td><span class="op">⏳ new, Yegor's suggestion</span></td>
 </tr>
 <tr>
-<td>Emails of <strong>Petr, Slávek and Patrik only</strong></td>
-<td>Pre-purchase questions</td>
-<td>Questions only; the email text is not stored</td>
-<td><span class="op">⏳ needs their real SiteGround passwords</span></td>
-</tr>
-<tr>
-<td><strong>Josh's official support WhatsApp</strong> (number ending 143), through Chatwoot</td>
-<td>Questions and issues</td>
-<td>Topics only</td>
-<td><span class="op">⏳ after phase 1</span></td>
+<td>ClickUp <strong>Orders</strong></td>
+<td>That an inquiry or conversation became a sale</td>
+<td>The match only; <strong>no amounts</strong></td>
+<td><span class="op">⏳ to confirm with Yegor</span></td>
 </tr>
 <tr>
 <td>CTRL's own social stats</td>
@@ -112,25 +124,103 @@ a{color:#b07d00}
 </tr>
 <tr>
 <td>Shopify orders (optional)</td>
-<td>Where online buyers first came from</td>
-<td>Source only</td>
+<td>The link code an online buyer landed with</td>
+<td>The code only</td>
 <td><span class="op">⏳ only if people buy through checkout</span></td>
 </tr>
 </tbody>
 </table>
 <p>Not used any more: other people's inboxes, WhatsApp on reps' own phones, the Mac reader (stopped 12 Nov), and call recording (parked).</p>
+<h2>How social media → sales is tracked</h2>
+<h3>1. One link system, no raw links anywhere</h3>
+<p>Every link anyone at OneMiners posts becomes a short <strong>tracked link</strong> from CTRL, on our own address (for example <code>go.oneminers.com/z15-yt</code>). Each one carries a code that says exactly where it was posted: the platform, the post, and whether it sat in a bio, a description, a comment reply or a DM. CTRL counts every click, then sends the person on to where they wanted to go.</p>
+<p><strong>The team rule:</strong> never paste a raw website link or a raw WhatsApp number again. CTRL adds the tracked link by itself to every post it prepares or publishes. For comments and DMs, the team gets a short list of ready <strong>reply links</strong> per platform (Instagram DM, YouTube comment, TikTok DM and so on), one tap to copy.</p>
+<h3>2. Where the links go, platform by platform</h3>
+<p>Platform link rules change often; these were checked on 12 Nov 2026.</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Where a link is clickable</th>
+<th>What we do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>YouTube long videos</strong></td>
+<td>Description and pinned comment</td>
+<td>A tracked link per video in both: website and WhatsApp</td>
+</tr>
+<tr>
+<td><strong>YouTube Shorts</strong></td>
+<td>Not in the description or comments (removed by YouTube on 31 Aug 2023)</td>
+<td>Channel header links, each tracked; the "related video" link to a long video; the spoken or on-screen line points to the channel links. Per-Short detail comes from the "which video?" answer</td>
+</tr>
+<tr>
+<td><strong>Instagram</strong></td>
+<td>Bio (up to 5 links), Story link stickers, DMs. Not in Reel captions or comments</td>
+<td>Each bio link and every Story sticker tracked; DM replies use the Instagram DM reply link; later, "comment a keyword, get the link in a DM" for Reels</td>
+</tr>
+<tr>
+<td><strong>TikTok</strong></td>
+<td>Bio link (our account qualifies). Not in captions</td>
+<td>Tracked bio link; DM replies use the TikTok reply link</td>
+</tr>
+<tr>
+<td><strong>Facebook, X, LinkedIn</strong></td>
+<td>Posts and comments</td>
+<td>A tracked link per post</td>
+</tr>
+<tr>
+<td><strong>Comment and DM replies, every platform</strong></td>
+<td>Wherever the platform allows</td>
+<td>The reply links, so each referral from a conversation is counted by platform</td>
+</tr>
+<tr>
+<td><strong>Email signatures, website buttons</strong></td>
+<td>Everywhere</td>
+<td>Tracked too, so website and email traffic is not mistaken for social</td>
+</tr>
+</tbody>
+</table>
+<h3>3. The code travels with the customer</h3>
+<table>
+<thead>
+<tr>
+<th>They click through to</th>
+<th>How the code arrives</th>
+<th>Where we see it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The website</strong></td>
+<td>Kept in the browser for 30 days and sent with the inquiry form</td>
+<td>A "Ref" field on the ClickUp Sales Inquiries task</td>
+</tr>
+<tr>
+<td><strong>The support WhatsApp</strong></td>
+<td>The link opens WhatsApp with a first message already typed, ending in the code, e.g. <em>"Hi OneMiners (ref IG-DM)"</em></td>
+<td>The chat in Chatwoot, then the ClickUp ticket</td>
+</tr>
+<tr>
+<td><strong>Email</strong></td>
+<td>The link opens an email with the code in the subject</td>
+<td>The three synced inboxes</td>
+</tr>
+<tr>
+<td><strong>Shopify checkout</strong></td>
+<td>The address they landed on</td>
+<td>The Shopify order</td>
+</tr>
+</tbody>
+</table>
+<h3>4. Joining it up</h3>
+<p>CTRL follows each code to the conversation it started, then matches that customer's email or phone across <strong>Sales Inquiries, Support Requests, Orders, the three inboxes and the support WhatsApp</strong>. The result is one path per customer: <em>which post → which conversation → which ticket or inquiry → order or not.</em> The page shows only the totals of those paths, never the people.</p>
+<p><strong>Honest limits:</strong> counting starts on the day the links go live, never backwards. A customer can delete the code from the typed WhatsApp message, or type our address by hand; then the "where did you find us?" answer is the fallback, and the page shows the share of <strong>unknown source</strong> openly instead of hiding it. Shorts and TikTok captions can't hold links, so those are tracked per channel, not per video, unless the customer names the video.</p>
 <h2>About the 143 number</h2>
 <p>The support number was <strong>suspended, never banned</strong>, on 5 Nov. It was signed in directly on a new phone instead of being paired, which kicked the other phone out; WhatsApp read the quick swap as possible theft. It has had no problems before or since.</p>
 <p><strong>For the Chatwoot connection this matters:</strong> connecting the number unlinks every paired device. They must be re-linked the normal way, by <strong>pairing</strong> (Linked devices → Link a device), never by signing in to the number on another phone. One phone stays the main phone throughout.</p>
-<h2>How content → sale works</h2>
-<p>Today nothing records where a customer came from, so it cannot be measured yet. Three small changes make it possible:</p>
-<ol>
-<li><strong>One question on the website inquiry form:</strong> "Where did you find us?" with YouTube Short / YouTube video / Instagram / TikTok / X / Google / a friend / other, plus an optional "Which video?" box.</li>
-<li><strong>Tracked links:</strong> every bio and video description uses a link that fills that answer in by itself. CTRL makes the links, one per platform, and one per video for the big ones.</li>
-<li><strong>The sale:</strong> CTRL matches each inquiry to a task in ClickUp <strong>Orders</strong> by the customer's email or phone. Only the match is kept.</li>
-</ol>
-<p>CTRL then puts it next to the views it already collects: views → inquiries → orders, per platform and per video.</p>
-<p><strong>Honest limits:</strong> it counts from the day the form changes, never backwards. Some people will answer the question wrongly or skip it. Links undercount people who type the address. It shows direction, not exact truth.</p>
 <h2>Cleaning up what was built</h2>
 <table>
 <thead>
@@ -142,11 +232,11 @@ a{color:#b07d00}
 <tbody>
 <tr>
 <td>The 5 emails filed from <strong>Yegor's inbox</strong></td>
-<td>To be deleted (Henry's OK)</td>
+<td><span class="hl">✅ Deleted 12 Nov, with every copy</span></td>
 </tr>
 <tr>
 <td>The <strong>Tomas test day</strong> (WhatsApp)</td>
-<td>To be deleted (Henry's OK)</td>
+<td><span class="hl">✅ Deleted 12 Nov, with every copy</span></td>
 </tr>
 <tr>
 <td>Customer timelines, pipeline and deals views</td>
@@ -162,11 +252,12 @@ a{color:#b07d00}
 </tr>
 <tr>
 <td>Mac WhatsApp reader</td>
-<td>Stopped 12 Nov; app removed later</td>
+<td><span class="hl">✅ Stopped 12 Nov</span></td>
 </tr>
 </tbody>
 </table>
 <h2>Build order</h2>
+<p>The links go first: every day without them is a day of sales we can never trace back.</p>
 <table>
 <thead>
 <tr>
@@ -179,36 +270,43 @@ a{color:#b07d00}
 <tbody>
 <tr>
 <td>1</td>
-<td><strong>Insights page</strong> from data already flowing: Sales Inquiries plus the support lists → top questions, issues and hesitations; Monday roll-up; the clean-up above</td>
-<td>Henry's OK on the two deletions</td>
+<td><strong>Tracked links</strong>: the link maker in CTRL, the short-link address, reply links for comments and DMs, links swapped into every bio, header, pinned comment and description</td>
+<td>The short-link address on oneminers.com (one setting in Cloudflare by whoever manages that domain)</td>
 <td>Start now</td>
 </tr>
 <tr>
+<td>1</td>
+<td><strong>Insights page</strong> from data already flowing: Sales Inquiries and the support lists → top questions, issues and hesitations; Monday roll-up</td>
+<td>Nothing</td>
+<td>Start now, alongside</td>
+</tr>
+<tr>
 <td>2</td>
-<td><strong>Content → sale</strong>: the form question, tracked links, matching to Orders</td>
+<td><strong>Website form</strong>: the "Ref" field and "Where did you find us?"; matching to Orders</td>
 <td>Whoever edits the website form; Yegor confirms Orders = a sale</td>
-<td>After the form changes</td>
+<td>As soon as possible</td>
 </tr>
 <tr>
 <td>3</td>
-<td><strong>Three inboxes</strong>: pre-purchase questions from Petr, Slávek and Patrik</td>
-<td>Their real SiteGround passwords on their Roster rows</td>
-<td>Any time</td>
+<td><strong>Support WhatsApp</strong> through Chatwoot, with the code in the first message</td>
+<td>A Chatwoot account (about $19 a month); the phone that holds 143 at hand</td>
+<td>After phase 1</td>
 </tr>
 <tr>
 <td>4</td>
-<td><strong>Josh's WhatsApp</strong> through Chatwoot</td>
-<td>A Chatwoot account (about $19 a month); the phone that holds 143 at hand for the connection</td>
-<td>After phase 1</td>
+<td><strong>Three inboxes</strong>: pre-purchase questions and codes from Petr, Slávek and Patrik</td>
+<td>Their real SiteGround passwords on their Roster rows</td>
+<td>Any time</td>
 </tr>
 </tbody>
 </table>
-<p>Phase 1 needs nothing from anyone else, and it already answers half of what Yegor asked.</p>
 <h2>Questions for Henry and Yegor</h2>
 <ol>
 <li>Does a task in ClickUp <strong>Orders</strong> mean the customer bought? ☐ yes ☐ no, a sale is: <span class="blank">&nbsp;</span></li>
 <li>Do any sales happen through Shopify checkout? ☐ yes ☐ no</li>
 <li>Are <strong>Support Requests</strong> the tickets clients create, and should Technical, Returns &amp; Warranty and Shipping be included? ☐ yes ☐ only: <span class="blank">&nbsp;</span></li>
-<li>Who can add "Where did you find us?" to the website inquiry form? <span class="blank">&nbsp;</span></li>
+<li>Who can change the website inquiry form (the "Ref" field and "Where did you find us?")? <span class="blank">&nbsp;</span></li>
+<li>Who manages oneminers.com in Cloudflare, to add the short-link address? <span class="blank">&nbsp;</span></li>
+<li>Who answers comments and DMs on each platform, so they get the reply links? <span class="blank">&nbsp;</span></li>
 <li>Which ClickUp status or list should count as a lost or closed inquiry? <span class="blank">&nbsp;</span></li>
 </ol></body></html>
