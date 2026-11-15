@@ -20,7 +20,7 @@ hr{border:0;border-top:1px solid #e3e1da;margin:16px 0}
 .blank{display:inline-block;min-width:150px;border-bottom:1px solid #999}
 ul,ol{padding-left:18px;margin:4px 0} li{margin:2px 0} p{margin:5px 0}
 a{color:#b07d00}
-@media screen{body{max-width:880px;margin:0 auto;padding:16px 16px 48px;background:#fff}.mast{border-radius:6px}table{display:block;overflow-x:auto}}@media screen and (max-width:600px){body{font-size:11pt}.mast h1{font-size:16pt}}</style></head><body><div class="mast"><div class="k">OneMiners · CTRL · Sales ↔ Marketing</div><h1>Customer Insights: the Reshaped Plan</h1><div class="s">Sales ↔ Marketing · 12 Nov 2026 · replaces the Sales page design</div></div><h2>Why this changes</h2>
+@media screen{body{max-width:880px;margin:0 auto;padding:16px 16px 48px;background:#fff}.mast{border-radius:6px}table{display:block;overflow-x:auto}pre{overflow-x:auto}}@media screen and (max-width:600px){body{font-size:11pt}.mast h1{font-size:16pt}}</style></head><body><div class="mast"><div class="k">OneMiners · CTRL · Sales ↔ Marketing</div><h1>Customer Insights: the Reshaped Plan</h1><div class="s">Sales ↔ Marketing · 15 Nov 2026 · with Yegor's answers</div></div><h2>Why this changes</h2>
 <p>Yegor pushed back on 12 Nov, and he is right. What was built is a CRM: every rep, every inbox, every chat, one timeline per customer. That is more personal data than marketing needs, and it still does not answer the question he expected: <strong>which content brings customers who buy.</strong></p>
 <p>The new aim, in Henry's and Yegor's words:</p>
 <ul>
@@ -46,6 +46,11 @@ a{color:#b07d00}
 <td>"Z15 Pro bench Short: 41k views → 180 clicks → 9 WhatsApp chats + 3 forms → 6 inquiries → 2 orders"</td>
 </tr>
 <tr>
+<td><strong>Rep links</strong></td>
+<td>For each salesperson: links sent → clicks → conversations → orders</td>
+<td>"Slávek: 34 links sent → 21 clicks → 8 chats → 3 orders"</td>
+</tr>
+<tr>
 <td><strong>Before they buy</strong></td>
 <td>The most asked questions this month, and how that is changing</td>
 <td>"Hosting price in Ethiopia: asked 14 times, up from 5"</td>
@@ -64,6 +69,7 @@ a{color:#b07d00}
 </table>
 <p>Each row has a short AI summary and a few anonymous example questions in the customer's own words, with no names, emails or numbers. Every Monday the top items also go to the marketing idea Inbox.</p>
 <h2>Where the data comes from</h2>
+<p>Updated with Yegor's answers of 15 Nov.</p>
 <table>
 <thead>
 <tr>
@@ -78,13 +84,25 @@ a{color:#b07d00}
 <td><strong>Tracked links: every link we publish anywhere</strong> (bios, descriptions, pinned comments, Story stickers, comment replies, DM replies, email signatures, website buttons)</td>
 <td>Each click: which link code, so which platform, which post, which reply</td>
 <td>Click counts per code</td>
-<td><span class="op">⏳ new, the core of social → sales</span></td>
+<td><span class="hl">✅ built 15 Nov; live once go.oneminers.com is added</span></td>
 </tr>
 <tr>
-<td><strong>Website inquiry form</strong></td>
-<td>The link code the visitor arrived with (kept for 30 days), plus "Where did you find us?"</td>
+<td><strong>Rep links</strong>: each salesperson's own code (Yegor, 15 Nov)</td>
+<td>Each click on a link a rep sent a customer</td>
+<td>Clicks, conversations and orders per rep code</td>
+<td><span class="hl">✅ built 15 Nov, same link maker</span></td>
+</tr>
+<tr>
+<td><strong>Website inquiry form</strong> (Alex)</td>
+<td>The link code the visitor arrived with, plus "Where did you find us?"</td>
 <td>The code and the answer, on the ClickUp task</td>
-<td><span class="op">⏳ needs a small change to the form</span></td>
+<td><span class="op">⏳ Alex, see below</span></td>
+</tr>
+<tr>
+<td><strong>Our own shop platform</strong> (Alex): a permanent order feed into CTRL</td>
+<td>Each order: the link code it came from, product type, and a scrambled (hashed) email and phone for matching</td>
+<td>Order counts per code; <strong>no amounts, no names</strong></td>
+<td><span class="op">⏳ Alex, see below</span></td>
 </tr>
 <tr>
 <td><strong>Support WhatsApp</strong> (Josh's 143 number), through Chatwoot</td>
@@ -105,16 +123,22 @@ a{color:#b07d00}
 <td><span class="hl">✅ syncing since 12 Nov</span></td>
 </tr>
 <tr>
-<td>ClickUp <strong>Support Requests</strong>, Technical, Returns &amp; Warranty, Shipping resolution, Shipping &amp; Termination</td>
+<td>ClickUp <strong>Support Requests</strong> and <strong>Technical</strong></td>
 <td>Issue topics, and the link code where the chat or form had one</td>
 <td>Topics and counts</td>
-<td><span class="op">⏳ new, Yegor's suggestion</span></td>
+<td><span class="op">⏳ new</span></td>
+</tr>
+<tr>
+<td>ClickUp <strong>Returns &amp; Warranty</strong>, only cases about the <strong>7-year warranty</strong></td>
+<td>Warranty issue topics</td>
+<td>Topics and counts</td>
+<td><span class="op">⏳ new</span></td>
 </tr>
 <tr>
 <td>ClickUp <strong>Orders</strong></td>
-<td>That an inquiry or conversation became a sale</td>
+<td>That an inquiry or conversation became a sale (Yegor: an Orders task = a confirmed sale)</td>
 <td>The match only; <strong>no amounts</strong></td>
-<td><span class="op">⏳ to confirm with Yegor</span></td>
+<td><span class="op">⏳ new</span></td>
 </tr>
 <tr>
 <td>CTRL's own social stats</td>
@@ -122,15 +146,9 @@ a{color:#b07d00}
 <td>Already in CTRL</td>
 <td><span class="hl">✅</span></td>
 </tr>
-<tr>
-<td>Shopify orders (optional)</td>
-<td>The link code an online buyer landed with</td>
-<td>The code only</td>
-<td><span class="op">⏳ only if people buy through checkout</span></td>
-</tr>
 </tbody>
 </table>
-<p>Not used any more: other people's inboxes, WhatsApp on reps' own phones, the Mac reader (stopped 12 Nov), and call recording (parked).</p>
+<p>Left out on purpose: the Shipping lists (few orders, and the focus is ASICs and hosting), Returns, and Shopify (no sales go through it). Also not used any more: other people's inboxes, WhatsApp on reps' own phones, the Mac reader (stopped 12 Nov), and call recording (parked).</p>
 <h2>How social media → sales is tracked</h2>
 <h3>1. One link system, no raw links anywhere</h3>
 <p>Every link anyone at OneMiners posts becomes a short <strong>tracked link</strong> from CTRL, on our own address (for example <code>go.oneminers.com/z15-yt</code>). Each one carries a code that says exactly where it was posted: the platform, the post, and whether it sat in a bio, a description, a comment reply or a DM. CTRL counts every click, then sends the person on to where they wanted to go.</p>
@@ -183,7 +201,9 @@ a{color:#b07d00}
 </tr>
 </tbody>
 </table>
-<h3>3. The code travels with the customer</h3>
+<h3>3. Rep links: the same system for the sales team</h3>
+<p>Each salesperson has their own code. When Slávek sends a customer a link to a product, the link carries his code, e.g. <code>go.oneminers.com/r-slavek-z15-pro</code>. CTRL then shows, per rep, how many of their links were clicked, how many led to a conversation, and how many to an order. It is the same link maker with one more source next to platform and post, and it holds no customer data. A full CRM with customer records, call recordings and emails is a separate, later project.</p>
+<h3>4. The code travels with the customer</h3>
 <table>
 <thead>
 <tr>
@@ -209,14 +229,14 @@ a{color:#b07d00}
 <td>The three synced inboxes</td>
 </tr>
 <tr>
-<td><strong>Shopify checkout</strong></td>
-<td>The address they landed on</td>
-<td>The Shopify order</td>
+<td><strong>Our shop (checkout)</strong></td>
+<td>Kept in the browser for 30 days and attached to the order</td>
+<td>The order feed from our platform</td>
 </tr>
 </tbody>
 </table>
-<h3>4. Joining it up</h3>
-<p>CTRL follows each code to the conversation it started, then matches that customer's email or phone across <strong>Sales Inquiries, Support Requests, Orders, the three inboxes and the support WhatsApp</strong>. The result is one path per customer: <em>which post → which conversation → which ticket or inquiry → order or not.</em> The page shows only the totals of those paths, never the people.</p>
+<h3>5. Joining it up</h3>
+<p>CTRL follows each code to the conversation it started, then matches that customer's email or phone across <strong>Sales Inquiries, Support Requests, Technical, Orders, the shop orders, the three inboxes and the support WhatsApp</strong>. The result is one path per customer: <em>which post → which conversation → which ticket or inquiry → order or not.</em> The page shows only the totals of those paths, never the people.</p>
 <p><strong>Honest limits:</strong> counting starts on the day the links go live, never backwards. A customer can delete the code from the typed WhatsApp message, or type our address by hand; then the "where did you find us?" answer is the fallback, and the page shows the share of <strong>unknown source</strong> openly instead of hiding it. Shorts and TikTok captions can't hold links, so those are tracked per channel, not per video, unless the customer names the video.</p>
 <h2>About the 143 number</h2>
 <p>The support number was <strong>suspended, never banned</strong>, on 5 Nov. It was signed in directly on a new phone instead of being paired, which kicked the other phone out; WhatsApp read the quick swap as possible theft. It has had no problems before or since.</p>
@@ -256,8 +276,93 @@ a{color:#b07d00}
 </tr>
 </tbody>
 </table>
+<h2>How an inquiry counts as won, open or lost (proposed rule, Yegor to confirm)</h2>
+<p>ClickUp statuses are used differently by different people, so the rule does not depend on them. It uses two things CTRL can see for certain: an order, and whether anything has happened.</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Won</strong></td>
+<td>The same email or phone appears in an Orders task, or in the shop's order feed, within <strong>90 days</strong> of the inquiry</td>
+</tr>
+<tr>
+<td><strong>Open</strong></td>
+<td>No order yet, and the task had a reply, comment or status change in the last <strong>30 days</strong></td>
+</tr>
+<tr>
+<td><strong>Lost</strong></td>
+<td>No order, and nothing has happened on the task for <strong>30 days</strong>, or it was closed without an order</td>
+</tr>
+</tbody>
+</table>
+<p>A lost inquiry that orders later moves to Won by itself. The 90 and 30 days are settings and can be changed after a month of real numbers.</p>
+<h2>Who does what</h2>
+<table>
+<thead>
+<tr>
+<th>Person</th>
+<th>Task</th>
+<th>What is needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tomáš H</strong></td>
+<td>Add the short address <code>go.oneminers.com</code> in Cloudflare</td>
+<td>Two settings, about 5 minutes. See "For Tomáš H" below</td>
+</tr>
+<tr>
+<td><strong>Alex</strong></td>
+<td>Website: keep the link code and send it with the form; add "Where did you find us?"</td>
+<td>See "For Alex" below</td>
+</tr>
+<tr>
+<td><strong>Alex</strong></td>
+<td>A permanent order feed from our platform into CTRL</td>
+<td>See "For Alex" below</td>
+</tr>
+<tr>
+<td><strong>Rubellin</strong></td>
+<td>Names of who answers comments and DMs on each platform</td>
+<td>The reply links go to those people as soon as the address is live</td>
+</tr>
+<tr>
+<td><strong>Henry</strong></td>
+<td>Approve the short address on CTRL's side; create the access key for Alex's feed</td>
+<td>Both are settings only Henry changes</td>
+</tr>
+</tbody>
+</table>
+<h2>For Tomáš H: the short address</h2>
+<p>oneminers.com and CTRL sit in different Cloudflare accounts, so the simplest way needs no account sharing. In the <strong>oneminers.com</strong> zone:</p>
+<ol>
+<li><strong>DNS → Add record:</strong> type <code>AAAA</code>, name <code>go</code>, address <code>100::</code>, <strong>Proxied</strong> (orange cloud) on.</li>
+<li><strong>Rules → Redirect Rules → Create rule:</strong> name it "Tracked links". When the hostname equals <code>go.oneminers.com</code>, then <strong>URL redirect</strong>, type <strong>Dynamic</strong>, expression <code>concat("https://go.oneminersmarketing.com", http.request.uri.path)</code>, status <strong>302</strong>, preserve query string off. Deploy.</li>
+</ol>
+<p>That's all. A click on <code>go.oneminers.com/ig-bio-wa</code> then reaches CTRL's link Worker, which counts it and sends the person on. If he'd rather attach the link Worker to oneminers.com directly, he can instead invite henry@oneminers.com to the oneminers.com account with the Workers Routes permission.</p>
+<h2>For Alex: the website and the order feed</h2>
+<p><strong>1. Keep the code (every page).</strong> When a page opens with <code>?ref=CODE</code> in the address (lowercase letters, digits and dashes, at most 48 characters), save it in a first-party cookie <code>om_ref</code> for 30 days; a newer code replaces it. Also save the first one in <code>om_ref_first</code> if that cookie is empty. Our links also add standard <code>utm_source</code>, <code>utm_medium</code> and <code>utm_campaign</code> tags, so Google Analytics sees the same split. These cookies should sit under the site's existing analytics or marketing consent. When a visitor declines, the code isn't kept, and they show up as "unknown source".</p>
+<p><strong>2. The inquiry form.</strong> Add a hidden field <strong>Ref</strong> filled from <code>om_ref</code>, and a visible, optional question <strong>"Where did you find us?"</strong> with these choices: YouTube, YouTube Shorts, Instagram, TikTok, Facebook, X, LinkedIn, Google search, a friend or colleague, other. Both go onto the ClickUp Sales Inquiries task, as custom fields or as two lines in the description ("Ref: …", "Found us: …"). CTRL's sync reads either.</p>
+<p><strong>3. The order feed (permanent data link).</strong> When an order is placed, and again when it is paid, cancelled or refunded, the platform sends one small message to CTRL:</p>
+<p><code>POST https://ctrl.oneminersmarketing.com/api/ingest/sales/order</code></p>
+<pre><code>{
+  &quot;order_id&quot;: &quot;…&quot;,            // the platform's own order number
+  &quot;at&quot;: &quot;2026-11-20T14:03:00Z&quot;,
+  &quot;status&quot;: &quot;placed | paid | cancelled | refunded&quot;,
+  &quot;ref&quot;: &quot;ig-bio-wa&quot;,         // om_ref at checkout, or null
+  &quot;ref_first&quot;: &quot;yt-desc-…&quot;,   // om_ref_first, or null
+  &quot;products&quot;: [{&quot;type&quot;: &quot;asic | hosting | other&quot;, &quot;model&quot;: &quot;Antminer S21 XP&quot;, &quot;qty&quot;: 2}],
+  &quot;email_sha256&quot;: &quot;…&quot;,        // SHA-256 of the email, trimmed and lowercased
+  &quot;phone_sha256&quot;: &quot;…&quot;         // SHA-256 of the phone in +countrycode digits form, or null
+}
+</code></pre>
+<p>No prices, amounts, names or addresses are sent. The email and phone arrive only scrambled (hashed), which is enough for CTRL to match an order to the inquiry or chat that came before it. CTRL scrambles the ClickUp emails the same way. Henry creates the access key for this feed: a Cloudflare service token plus a CTRL key, sent to Alex privately. Each message is answered with <code>{"ok": true}</code>, and the same order sent twice is stored once.</p>
 <h2>Build order</h2>
-<p>The links go first: every day without them is a day of sales we can never trace back.</p>
 <table>
 <thead>
 <tr>
@@ -270,21 +375,27 @@ a{color:#b07d00}
 <tbody>
 <tr>
 <td>1</td>
-<td><strong>Tracked links</strong>: the link maker in CTRL, the short-link address, reply links for comments and DMs, links swapped into every bio, header, pinned comment and description</td>
-<td>The short-link address on oneminers.com (one setting in Cloudflare by whoever manages that domain)</td>
-<td>Start now</td>
+<td><strong>Tracked links and rep links</strong>: the link maker in CTRL (Sales → Links), reply links for comments and DMs</td>
+<td><span class="hl">✅ built 15 Nov. Goes live when Tomáš H adds </span><code>go.oneminers.com</code></td>
+<td>Now</td>
 </tr>
 <tr>
 <td>1</td>
-<td><strong>Insights page</strong> from data already flowing: Sales Inquiries and the support lists → top questions, issues and hesitations; Monday roll-up</td>
+<td>Links swapped into every bio, header, pinned comment and description; reply links sent to the comment and DM team</td>
+<td>The short address live; names from Rubellin</td>
+<td>The day it is live</td>
+</tr>
+<tr>
+<td>1</td>
+<td><strong>Insights page</strong> from data already flowing: Sales Inquiries, Support Requests, Technical, 7-year-warranty cases → top questions, issues and hesitations; Monday roll-up</td>
 <td>Nothing</td>
-<td>Start now, alongside</td>
+<td>Next</td>
 </tr>
 <tr>
 <td>2</td>
-<td><strong>Website form</strong>: the "Ref" field and "Where did you find us?"; matching to Orders</td>
-<td>Whoever edits the website form; Yegor confirms Orders = a sale</td>
-<td>As soon as possible</td>
+<td><strong>Website form</strong> Ref and "Where did you find us?"; the <strong>order feed</strong>; matching to Orders</td>
+<td>Alex</td>
+<td>As soon as Alex can</td>
 </tr>
 <tr>
 <td>3</td>
@@ -300,13 +411,13 @@ a{color:#b07d00}
 </tr>
 </tbody>
 </table>
-<h2>Questions for Henry and Yegor</h2>
+<h2>Yegor's answers (15 Nov)</h2>
 <ol>
-<li>Does a task in ClickUp <strong>Orders</strong> mean the customer bought? ☐ yes ☐ no, a sale is: <span class="blank">&nbsp;</span></li>
-<li>Do any sales happen through Shopify checkout? ☐ yes ☐ no</li>
-<li>Are <strong>Support Requests</strong> the tickets clients create, and should Technical, Returns &amp; Warranty and Shipping be included? ☐ yes ☐ only: <span class="blank">&nbsp;</span></li>
-<li>Who can change the website inquiry form (the "Ref" field and "Where did you find us?")? <span class="blank">&nbsp;</span></li>
-<li>Who manages oneminers.com in Cloudflare, to add the short-link address? <span class="blank">&nbsp;</span></li>
-<li>Who answers comments and DMs on each platform, so they get the reply links? <span class="blank">&nbsp;</span></li>
-<li>Which ClickUp status or list should count as a lost or closed inquiry? <span class="blank">&nbsp;</span></li>
+<li><strong>An Orders task = a confirmed sale.</strong> Yes; tickets are created for orders already placed.</li>
+<li><strong>Shopify:</strong> no. The cart runs on our own platform. Alex builds a permanent data link into CTRL (spec above).</li>
+<li><strong>Support lists:</strong> Support Requests and Technical. Warranty only for the 7-year warranty. No Shipping for now, no Returns.</li>
+<li><strong>Website form:</strong> Alex.</li>
+<li><strong>oneminers.com in Cloudflare:</strong> Tomáš H.</li>
+<li><strong>Comments and DMs:</strong> the Philippines team; Rubellin has the names per platform.</li>
+<li><strong>Lost or closed:</strong> a rule is proposed above for Yegor to confirm.</li>
 </ol></body></html>
